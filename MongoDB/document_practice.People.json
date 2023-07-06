@@ -1,0 +1,52 @@
+[{
+  "_id": {
+    "$oid": "64a6cf6bb92ea02f90b42071"
+  },
+  "firstName": "Emmanuel",
+  "surname": "Alozieuwa",
+  "age": 29,
+  "height": 170,
+  "hobbies": [
+    "Football",
+    "Food",
+    "Music",
+    "Movies"
+  ],
+  "glasses": true
+},
+{
+  "_id": {
+    "$oid": "64a6d09fb92ea02f90b42072"
+  },
+  "firstName": "John",
+  "surname": "Doe",
+  "age": 39,
+  "height": 152,
+  "hobbies": [
+    "basketball",
+    "traveling",
+    "Music",
+    "excavating",
+    "Roulette"
+  ],
+  "glasses": true
+},
+{
+  "_id": {
+    "$oid": "64a6d09fb92ea02f90b42074"
+  },
+  "firstName": "Sam",
+  "surname": "Smith",
+  "age": 22,
+  "height": 158,
+  "hobbies": [
+    "reading",
+    "Traveling"
+  ],
+  "glasses": true,
+  "pet": {
+    "name": "Rex",
+    "age": 12,
+    "species": "dog"
+  }
+}]
