@@ -1,6 +1,7 @@
 const colors = require('colors')
 const prompt = require('prompt-sync')()
 
+
 // console.log('Hello, Emmanuel'.rainbow);
 // console.log('Hello, Emmanuel'.bgYellow);
 // console.log('Hello, Emmanuel'.black.bgRed);
@@ -24,53 +25,53 @@ const prompt = require('prompt-sync')()
 //     }
 // }
 
-console.log('---ROCK, PAPER, SCISSORS---');
-const options = ["Rock".red, "Paper".green, "Scissors".blue]
+// console.log('---ROCK, PAPER, SCISSORS---');
+// const options = ["Rock".red, "Paper".green, "Scissors".blue]
 
-function computersTurn(){
+// function computersTurn(){
 
-    return Math.floor(Math.random() * options.length) // picks a number between 0,1,2
+//     return Math.floor(Math.random() * options.length) // picks a number between 0,1,2
 
-}
+// }
 
-    function playersTurn(){
+//     function playersTurn(){
 
-        const input = prompt("RPS? ")
+//         const input = prompt("RPS? ")
 
-        switch (input.toLowerCase()){
+//         switch (input.toLowerCase()){
 
-            case "rock":
-            case "r":
-                return 0
+//             case "rock":
+//             case "r":
+//                 return 0
 
-            case "paper":
-            case "p":
-                return 1
+//             case "paper":
+//             case "p":
+//                 return 1
 
-            case "scissors":
-            case "s":
-                return 2                                                                                                                           
+//             case "scissors":
+//             case "s":
+//                 return 2                                                                                                                           
 
-            default:
+//             default:
 
-                return playersTurn()
+//                 return playersTurn()
 
-            }
+//             }
 
-    }
+//     }
 
 
-    while (true){
+//     while (true){
 
-        let playerChoice = playersTurn()
-        let computerChoice = computersTurn()
+//         let playerChoice = playersTurn()
+//         let computerChoice = computersTurn()
 
-        if (playerChoice == computerChoice){
+//         if (playerChoice == computerChoice){
 
-            console.log(`Draw! Both player choose ${options[playerChoice]}`)
+//             console.log(`Draw! Both player choose ${options[playerChoice]}`)
 
-        }else if ((playerChoice + 1)%3 == computerChoice){ // one use of modulus is to "wrap" maths. choice 2 + 1 becomes choice 0. 3%3 = 0
+//         }else if ((playerChoice + 1)%3 == computerChoice){ // one use of modulus is to "wrap" maths. choice 2 + 1 becomes choice 0. 3%3 = 0
                                                                                                                                                                                                     
-            console.log(`Computer Won! ${options[computerChoice]} beats ${options[playerC]}`)
-        }
-    }
+//             console.log(`Computer Won! ${options[computerChoice]} beats ${options[playerC]}`)
+//         }
+//     }
